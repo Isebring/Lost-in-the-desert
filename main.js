@@ -73,6 +73,14 @@ function showInp() {
           nar.style.fontSize = '1.8rem';
       }
 
+        else if (inp === "hop on it anyway") {
+          nar.innerHTML = "The camel runs away as you try to hop on, <br> fortunately the sand cushioned the fall <br> <br> 1. set up a camp and rest <br> or <br> 2. look for civilization " 
+          document.body.style.backgroundImage = "url('imgs/camel2.JPG')";
+          heading.innerText = 'The camel avoids you 🐪..'
+          document.body.style.transition = 'all 1000ms ease 180ms';
+          nar.style.fontSize = '1.8rem';
+    }
+
         else if (inp === "look for civilization") {
          nar.innerHTML = "You regret going to this place <br> as you hear some strange noises.. <br> <br> 1. investigate the noises <br> or <br> 2. look for water"
          document.body.style.backgroundImage = "url('imgs/ghost-town.JPG')";
@@ -113,9 +121,8 @@ function showInp() {
           nar.style.fontSize = '1.8rem';
 }
 
-
     } else {
-      nar.innerHTML = "you haven't started the game yet.";
+      nar.innerHTML = "You haven't started the game yet.";
       nar.style.fontSize = '1.8rem';
   }
 }
