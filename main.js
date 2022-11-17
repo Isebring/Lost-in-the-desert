@@ -11,20 +11,8 @@ let heading = document.getElementById('adventure');
 
 textInput.addEventListener('input', showInp);
 
+/**This function serves as the start of the story, when the user types "start game" it triggers the "if else" */
 
-/**
- * A function for a button to the right of the text input field where the user can reset the input field
- */
-function clearInput(){
-  let getValue= document.getElementById("user_inp");
-    if (getValue.value !="") {
-        getValue.value = "";
-    }
-}
-
-/**
- * This function serves as the start of the story, when the user types "start game" it triggers the "if else"
- */
 function showInp() {
   let inp = user_inp.value;
   
@@ -67,6 +55,7 @@ function showInp() {
           heading.innerText = 'Is that an oasis?? 🏝️'
           nar.style.fontSize = '1.8rem';
           document.body.style.transition = 'all 1000ms ease 180ms';
+          user_inp.value = ""
       }
 
         else if (inp === "approach the camel") {
@@ -76,6 +65,7 @@ function showInp() {
           heading.innerText = 'The camel pays no interest to you 🐪..'
           document.body.style.transition = 'all 1000ms ease 180ms';
           nar.style.fontSize = '1.8rem';
+          user_inp.value = ""
       }
 
         else if (inp === "hop on it anyway") {
@@ -85,6 +75,7 @@ function showInp() {
           heading.innerText = 'The camel avoids you 🐪..'
           document.body.style.transition = 'all 1000ms ease 180ms';
           nar.style.fontSize = '1.8rem';
+          user_inp.value = ""
     }
 
         else if (inp === "look for civilization") {
@@ -94,6 +85,7 @@ function showInp() {
          heading.innerText = 'You found some abandoned houses, this looks like a ghost town 🏚️..'
          document.body.style.transition = 'all 1000ms ease 180ms';
          nar.style.fontSize = '1.8rem';
+         user_inp.value = ""
      }
 
         else if (inp === "investigate the noises") {
@@ -103,6 +95,7 @@ function showInp() {
           heading.innerText = 'This house really gives you the creeps 😱..'
           document.body.style.transition = 'all 1000ms ease 180ms';
           nar.style.fontSize = '1.8rem';
+          user_inp.value = ""
       }
 
         else if (inp === "stay and face your fears") {
@@ -112,6 +105,7 @@ function showInp() {
           heading.innerText = 'A ghostlike creature appears and approaches you 👻..'
           document.body.style.transition = 'all 1000ms ease 180ms';
           nar.style.fontSize = '1.8rem';
+          user_inp.value = ""
     }
 
         else if (inp === "leave the ghost town") {
@@ -121,6 +115,7 @@ function showInp() {
           heading.innerText = 'You safely got out of that creepy ghost town 😌..'
           document.body.style.transition = 'all 1000ms ease 180ms';
           nar.style.fontSize = '1.8rem';
+          user_inp.value = ""
   }
 
         else if (inp === "set up a camp and rest") {
@@ -130,6 +125,7 @@ function showInp() {
           heading.innerText = 'You set up your tent and rests ⛺..'
           document.body.style.transition = 'all 1000ms ease 180ms';
           nar.style.fontSize = '1.8rem';
+          user_inp.value = ""
 }
 
     } else {
