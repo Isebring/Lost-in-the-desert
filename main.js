@@ -1,5 +1,7 @@
 window.addEventListener('DOMContentLoaded', showInp)
 
+document.title = "Lost in the desert";
+
 /** Variables for the story */
 
 let textInput = document.getElementById("user_inp");
@@ -94,6 +96,22 @@ function showInp() {
           document.body.style.transition = 'all 1000ms ease 180ms';
           nar.style.fontSize = '1.8rem';
     }
+
+        else if (inp === "leave the ghost town") {
+          nar.innerHTML = "You breathe a sigh of relief.. <br> <br> 1. set up a camp and rest <br> or <br> 2. look for civilization <br> or <br> 3. look for water";
+          document.body.style.backgroundImage = "url('imgs/desert2.JPG')";
+          heading.innerText = 'You safely got out of that creepy ghost town 😌..'
+          document.body.style.transition = 'all 1000ms ease 180ms';
+          nar.style.fontSize = '1.8rem';
+  }
+
+        else if (inp === "set up a camp and rest") {
+          nar.innerHTML = "You're about to fall asleep as something approaches <br> your tent. You wake up and realize it was all a nightmare <br> <br> Type start game to start over <br> <br> Thanks for playing! " 
+          document.body.style.backgroundImage = "url('imgs/camp.JPG')";
+          heading.innerText = 'You set up your tent and rests ⛺..'
+          document.body.style.transition = 'all 1000ms ease 180ms';
+          nar.style.fontSize = '1.8rem';
+}
 
 
     } else {
