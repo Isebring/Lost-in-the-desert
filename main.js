@@ -87,6 +87,15 @@ function showInp() {
           nar.style.fontSize = '1.8rem';
       }
 
+        else if (inp === "stay and face your fears") {
+          nar.innerHTML = "You completely freeze and your heartbeats increases <br> until you wake up and realize it was a nightmare <br> <br> Type start game to start over <br> <br> Thanks for playing! " 
+          document.body.style.backgroundImage = "url('imgs/ghostlike-creature.JPG')";
+          heading.innerText = 'A ghostlike creature appears and approaches you 👻..'
+          document.body.style.transition = 'all 1000ms ease 180ms';
+          nar.style.fontSize = '1.8rem';
+    }
+
+
     } else {
       nar.innerHTML = "you haven't started the game yet.";
       nar.style.fontSize = '1.8rem';
