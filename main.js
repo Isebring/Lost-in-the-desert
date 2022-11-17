@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', clearInput)
+window.addEventListener('DOMContentLoaded', showInp)
 
 /** Variables for the story */
 
@@ -21,6 +21,9 @@ function clearInput(){
     }
 }
 
+/**
+ * This function server as the start of the story, when the user types "start game" it triggers the "if else"
+ */
 function showInp() {
   let inp = user_inp.value;
   
@@ -40,6 +43,16 @@ function showInp() {
           heading.style.color = 'white';
           nar.style.fontSize = '1.8rem';
       }, 3000);
+  }
+
+      if(gameStarted){
+        if (inp === "look around") {
+            nar.innerHTML = "There's only sand as far as your eyes can see.. <br> <br> 1. look for water <br> or <br> 2. look for civilization";
+            document.body.style.backgroundImage = "url('imgs/desert2.JPG')";
+            heading.innerText = 'As you investigate the desert you get an uneasy feeling as you do not know how you got here 😕..'
+            document.body.style.transition = 'all 1000ms ease 180ms';
+            nar.style.fontSize = '1.8rem';
+        }
 
     } else {
       nar.innerHTML = "you haven't started the game yet.";
