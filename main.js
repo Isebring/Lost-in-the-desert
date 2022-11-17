@@ -63,13 +63,13 @@ function showInp() {
           document.body.style.transition = 'all 1000ms ease 180ms';
       }
 
-      else if (inp === "approach the camel") {
-        nar.innerHTML = "The camel refuses to interact with you.. <br> <br> 1. hop on it anyway <br> or <br> 2. set up a camp and rest <br> or <br> 3. look for civilization " 
-        document.body.style.backgroundImage = "url('imgs/camel.JPG')";
-        heading.innerText = 'The camel pays no interest to you 🐪..'
-        document.body.style.transition = 'all 1000ms ease 180ms';
-        nar.style.fontSize = '1.8rem';
-    }
+        else if (inp === "approach the camel") {
+          nar.innerHTML = "The camel refuses to interact with you.. <br> <br> 1. hop on it anyway <br> or <br> 2. set up a camp and rest <br> or <br> 3. look for civilization " 
+          document.body.style.backgroundImage = "url('imgs/camel.JPG')";
+          heading.innerText = 'The camel pays no interest to you 🐪..'
+          document.body.style.transition = 'all 1000ms ease 180ms';
+          nar.style.fontSize = '1.8rem';
+      }
 
         else if (inp === "look for civilization") {
          nar.innerHTML = "You regret going to this place <br> as you hear some strange noises.. <br> <br> 1. investigate the noises <br> or <br> 2. look for water"
@@ -77,7 +77,15 @@ function showInp() {
          heading.innerText = 'You found some abandoned houses, this looks like a ghost town 🏚️..'
          document.body.style.transition = 'all 1000ms ease 180ms';
          nar.style.fontSize = '1.8rem';
-    }
+     }
+
+        else if (inp === "investigate the noises") {
+          nar.innerHTML = "The house is empty, but you get a feeling you <br> are being watched.. <br> <br> 1. leave the ghost town <br> or <br> 2. stay and face your fears " 
+          document.body.style.backgroundImage = "url('imgs/ghost-town2.JPG')";
+          heading.innerText = 'This house really gives you the creeps 😱..'
+          document.body.style.transition = 'all 1000ms ease 180ms';
+          nar.style.fontSize = '1.8rem';
+      }
 
     } else {
       nar.innerHTML = "you haven't started the game yet.";
