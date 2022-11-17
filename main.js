@@ -29,6 +29,7 @@ function showInp() {
   let inp = user_inp.value;
   
   if (inp == "start game")  {
+      user_inp.value = ""
       gameStarted = true;
       window.setTimeout(function () {
           nar.innerHTML = "Let's begin.";
@@ -56,6 +57,7 @@ function showInp() {
             heading.innerText = 'As you investigate the desert you get an uneasy feeling as you do not know how you got here 😕..'
             document.body.style.transition = 'all 1000ms ease 180ms';
             nar.style.fontSize = '1.8rem';
+            user_inp.value = ""
         }
 
         else if (inp === "look for water") {
