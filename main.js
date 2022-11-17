@@ -45,6 +45,7 @@ function showInp() {
       }, 3000);
   }
 
+  /** Here follows the if, else if and else statements for different user inputs throughout the story */
       if(gameStarted){
         if (inp === "look around") {
             nar.innerHTML = "There's only sand as far as your eyes can see.. <br> <br> 1. look for water <br> or <br> 2. look for civilization";
@@ -53,6 +54,14 @@ function showInp() {
             document.body.style.transition = 'all 1000ms ease 180ms';
             nar.style.fontSize = '1.8rem';
         }
+
+        else if (inp === "look for water") {
+          nar.innerHTML = "As you get closer you realize it's just a mirage. <br> As you continue to walk you think you spot a camel. <br> <br> 1. look for civilization <br> or <br> 2. approach the camel"
+          document.body.style.backgroundImage = "url('imgs/oasis.JPG')";
+          heading.innerText = 'Is that an oasis?? 🏝️'
+          nar.style.fontSize = '1.8rem';
+          document.body.style.transition = 'all 1000ms ease 180ms';
+      }
 
     } else {
       nar.innerHTML = "you haven't started the game yet.";
