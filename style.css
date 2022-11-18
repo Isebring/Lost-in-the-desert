@@ -16,7 +16,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+/* The input field */
 #user_inp {
   width: 582px;
   padding-top: 12px;
@@ -34,6 +34,7 @@ body {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
 }
 
+/* Heading text */
 #adventure {
   display: flex;
   justify-content: center;
@@ -45,7 +46,7 @@ body {
   text-shadow: 1px 1px 2px white;
   font-size: 2rem;
 }
-
+/* The narrator text */
 #narrator {
   display: flex;
   position: absolute;
@@ -63,6 +64,8 @@ body {
   opacity: 0.8;
   font-size: 1.8rem;
 }
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 1500px) {
   #adventure {
