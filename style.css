@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,79 +9,127 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background-image: url('imgs/compass.jpg');
+  background-image: url("imgs/compass.jpg");
   background-size: cover;
   justify-content: center;
   align-items: center;
+}
 
+#user_inp {
+  width: 582px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-color: rgb(218, 220, 224);
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 30px;
+  outline-style: none;
+}
+
+#user_inp:hover {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+#adventure {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 70%;
+  color: black;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 1px 1px 2px white;
+  font-size: 2rem;
+}
+
+#narrator {
+  display: flex;
+  position: absolute;
+  background: #333;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  height: 15rem;
+  width: 50rem;
+  top: 60%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  opacity: 0.8;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 1500px) {
+  #adventure {
+    font-size: 1.5rem;
+    text-align: center;
   }
 
-  #user_inp {
-    width: 582px;
-    max-width: 584px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-color: rgb(218, 220, 224);
-    border-style: solid;
-    border-width: 0.1rem;
-    border-radius: 30px;
-    outline-style: none;
+  @media screen and (max-width: 850px) {
+    body {
+      background-size: cover;
     }
+    #narrator {
+      width: 35rem;
+      height: 10rem;
+      font-size: 1.2rem;
+    }
+    #adventure {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    #user_inp {
+      width: 400px;
+    }
+  }
 
-    #user_inp:hover {
-      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5); 
-      }
-      
-      #clear-button {
-        width: 100px;
-        max-width: 120px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 13px;
-        padding-right: 13px;
-        border-radius: 20px;
-        border-color: rgb(218, 220, 224);
-        border-style: solid;
-        border-width: 0.1rem;
-        background-color: #f3f3f3;
-        font-weight: 700;
-        margin-left: 0.8rem;
-      }
+  @media screen and (max-width: 600px) {
+    #narrator {
+      width: 28rem;
+      height: 10rem;
+      font-size: 1.1rem;
+    }
+    #adventure {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    #user_inp {
+      width: 350px;
+    }
+  }
 
-      #clear-button:hover {
-        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);   
-        }
-        
-        #adventure {
-          display: flex;
-          justify-content: center;
-          position: absolute;
-          bottom: 70%;
-          color: black;
-          font-weight: 700;
-          font-style: italic;
-          text-shadow: 1px 1px 2px white;
-        }
+  @media screen and (max-width: 500px) {
+    #narrator {
+      width: 24rem;
+      height: 10rem;
+      font-size: 0.9rem;
+    }
+    #adventure {
+      font-size: 1.05rem;
+      text-align: center;
+    }
+    #user_inp {
+      width: 300px;
+    }
+  }
 
-        #narrator {
-          display: flex;
-          position: absolute;
-          background: #333;
-          color: white;
-          font-weight: 700;
-          text-align: center;
-          white-space: nowrap;
-          height: 20rem;
-          max-height: 20rem;
-          width: 50rem;
-          max-width: 50rem;
-          top: 60%;
-          justify-content: center;
-          align-items: center;
-          border-radius: 1rem;
-          opacity: 0.8;
-        }
+  @media screen and (max-width: 400px) {
+    #narrator {
+      width: 20rem;
+      height: 8rem;
+      font-size: 0.8rem;
+    }
+    #adventure {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    #user_inp {
+      width: 250px;
+    }
+  }
+}
