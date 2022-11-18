@@ -11,13 +11,12 @@ let nar = document.getElementById("narrator");
 /** A variable storing a boolean value set to false until the user types "start game" which makes it true */
 let gameStarted = false;
 
-/** A variable storing the <h1> text on every page throughout the story */
+/** A variable storing the heading text on every page throughout the story */
 let heading = document.getElementById("adventure");
 
 textInput.addEventListener("input", showInp);
 
 /** This function serves as the start of the story, when the user types "start game" it triggers the "if, else if conditional statements */
-
 function showInp() {
   let inp = textInput.value;
 
