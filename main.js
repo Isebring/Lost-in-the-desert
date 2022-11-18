@@ -2,16 +2,21 @@ window.addEventListener("DOMContentLoaded", showInp);
 
 document.title = "Lost in the desert";
 
-/** Variables for the story */
-
+/** Variable for getting the users input */
 let textInput = document.getElementById("user_inp");
+
+/** Variable for getting the narrator text beneath the user input field */
 let nar = document.getElementById("narrator");
+
+/** A variable storing a boolean value set to false to indicate that the game hasn't started yet */
 let gameStarted = false;
+
+/** A variable storing the <h1> text on every page throughout the story */
 let heading = document.getElementById("adventure");
 
 textInput.addEventListener("input", showInp);
 
-/**This function serves as the start of the story, when the user types "start game" it triggers the "if, else if conditional statements" */
+/** This function serves as the start of the story, when the user types "start game" it triggers the "if, else if conditional statements */
 
 function showInp() {
   let inp = user_inp.value;
