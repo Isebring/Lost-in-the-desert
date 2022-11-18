@@ -8,7 +8,7 @@ let textInput = document.getElementById("user_inp");
 /** Variable for getting the narrator text beneath the user input field */
 let nar = document.getElementById("narrator");
 
-/** A variable storing a boolean value set to false to indicate that the game hasn't started yet */
+/** A variable storing a boolean value set to false until the user types "start game" which makes it true */
 let gameStarted = false;
 
 /** A variable storing the <h1> text on every page throughout the story */
@@ -19,10 +19,10 @@ textInput.addEventListener("input", showInp);
 /** This function serves as the start of the story, when the user types "start game" it triggers the "if, else if conditional statements */
 
 function showInp() {
-  let inp = user_inp.value;
+  let inp = textInput.value;
 
   if (inp == "start game") {
-    user_inp.value = "";
+    textInput.value = "";
     gameStarted = true;
     window.setTimeout(function () {
       nar.innerHTML = "Let's begin.";
@@ -50,7 +50,7 @@ function showInp() {
       heading.innerText =
         "As you investigate the desert you get an uneasy feeling as you do not know how you got here 😕..";
       document.body.style.transition = "all 1000ms ease 180ms";
-      user_inp.value = "";
+      textInput.value = "";
 
     } else if (inp === "look for water") {
       nar.innerHTML =
@@ -59,7 +59,7 @@ function showInp() {
       document.body.style.backgroundSize = "cover";
       heading.innerText = "Is that an oasis?? 🏝️";
       document.body.style.transition = "all 1000ms ease 180ms";
-      user_inp.value = "";
+      textInput.value = "";
 
     } else if (inp === "approach the camel") {
       nar.innerHTML =
@@ -68,7 +68,7 @@ function showInp() {
       document.body.style.backgroundSize = "cover";
       heading.innerText = "The camel pays no interest to you 🐪..";
       document.body.style.transition = "all 1000ms ease 180ms";
-      user_inp.value = "";
+      textInput.value = "";
 
     } else if (inp === "hop on it anyway") {
       nar.innerHTML =
@@ -77,7 +77,7 @@ function showInp() {
       document.body.style.backgroundSize = "cover";
       heading.innerText = "The camel avoids you 🐪..";
       document.body.style.transition = "all 1000ms ease 180ms";
-      user_inp.value = "";
+      textInput.value = "";
 
     } else if (inp === "look for civilization") {
       nar.innerHTML =
@@ -87,7 +87,7 @@ function showInp() {
       heading.innerText =
         "You found some abandoned houses, this looks like a ghost town 🏚️..";
       document.body.style.transition = "all 1000ms ease 180ms";
-      user_inp.value = "";
+      textInput.value = "";
 
     } else if (inp === "investigate the noises") {
       nar.innerHTML =
@@ -96,7 +96,7 @@ function showInp() {
       document.body.style.backgroundSize = "cover";
       heading.innerText = "This house really gives you the creeps 😱..";
       document.body.style.transition = "all 1000ms ease 180ms";
-      user_inp.value = "";
+      textInput.value = "";
 
     } else if (inp === "stay and face your fears") {
       nar.innerHTML =
@@ -107,7 +107,7 @@ function showInp() {
       heading.innerText =
         "A ghostlike creature appears and approaches you 👻..";
       document.body.style.transition = "all 1000ms ease 180ms";
-      user_inp.value = "";
+      textInput.value = "";
 
     } else if (inp === "leave the ghost town") {
       nar.innerHTML =
@@ -116,7 +116,7 @@ function showInp() {
       document.body.style.backgroundSize = "cover";
       heading.innerText = "You safely got out of that creepy ghost town 😌..";
       document.body.style.transition = "all 1000ms ease 180ms";
-      user_inp.value = "";
+      textInput.value = "";
 
     } else if (inp === "set up a camp and rest") {
       nar.innerHTML =
@@ -125,7 +125,7 @@ function showInp() {
       document.body.style.backgroundSize = "cover";
       heading.innerText = "You set up your tent and rests ⛺..";
       document.body.style.transition = "all 1000ms ease 180ms";
-      user_inp.value = "";
+      textInput.value = "";
     }
   } else {
     nar.innerHTML = "You haven't started the game yet.";
