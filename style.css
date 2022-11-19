@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
   background-size: cover;
   justify-content: center;
   align-items: center;
+  transition: all 1000ms ease 300ms;
 }
 /* The input field */
 #user_inp {
@@ -40,19 +42,18 @@ body {
   justify-content: center;
   position: absolute;
   bottom: 70%;
-  color: black;
-  font-weight: 700;
   font-style: italic;
-  text-shadow: 1px 1px 2px white;
   font-size: 2rem;
+  text-shadow: 2px 3px 2px black;
+  color: white;
 }
 /* The narrator text */
 #narrator {
   display: flex;
   position: absolute;
-  background: #333;
+  background-color: rgba(36, 37, 39, 0.6);
+  backdrop-filter: blur(12px);
   color: white;
-  font-weight: 700;
   text-align: center;
   white-space: nowrap;
   height: 15rem;
@@ -60,8 +61,8 @@ body {
   top: 60%;
   justify-content: center;
   align-items: center;
-  border-radius: 1rem;
-  opacity: 0.8;
+  border-radius: 16px; 
+  opacity: 0.9;
   font-size: 1.8rem;
 }
 
@@ -92,7 +93,7 @@ body {
     #narrator {
       width: 28rem;
       height: 10rem;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
     #adventure {
       font-size: 1.2rem;
@@ -107,7 +108,7 @@ body {
     #narrator {
       width: 24rem;
       height: 10rem;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
     #adventure {
       font-size: 1.05rem;
@@ -122,7 +123,7 @@ body {
     #narrator {
       width: 20rem;
       height: 8rem;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
     #adventure {
       font-size: 0.9rem;
