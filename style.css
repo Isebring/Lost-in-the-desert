@@ -47,12 +47,13 @@ body {
   text-shadow: 2px 3px 2px black;
   color: white;
 }
+
 /* The narrator text */
 #narrator {
   display: flex;
   position: absolute;
-  background-color: rgba(36, 37, 39, 0.6);
-  backdrop-filter: blur(12px);
+  background-color: rgba(37, 63, 114, 0.6);
+  backdrop-filter: blur(18px);
   color: white;
   text-align: center;
   white-space: nowrap;
@@ -67,7 +68,6 @@ body {
 }
 
 /* MEDIA QUERIES */
-
 @media screen and (max-width: 1500px) {
   #adventure {
     font-size: 1.5rem;
