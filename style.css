@@ -84,80 +84,64 @@ body {
     font-size: 1.5rem;
     text-align: center;
   }
-  #camel-narrator {
-    width: 9rem;
+}
+
+@media screen and (max-width: 850px) {
+  #narrator {
+    width: 35rem;
+    height: 10rem;
+    font-size: 1.2rem;
   }
-
-  @media screen and (max-width: 850px) {
-    #narrator {
-      width: 35rem;
-      height: 10rem;
-      font-size: 1.2rem;
-    }
-    #adventure {
-      font-size: 1.2rem;
-      text-align: center;
-    }
-    #user_inp {
-      width: 400px;
-    }
-
-    #camel-narrator {
-      width: 8rem;
-    }
+  #adventure {
+    font-size: 1.2rem;
+    text-align: center;
   }
-
-  @media screen and (max-width: 600px) {
-    #narrator {
-      width: 28rem;
-      height: 10rem;
-      font-size: 1rem;
-    }
-    #adventure {
-      font-size: 1.2rem;
-      text-align: center;
-    }
-    #user_inp {
-      width: 350px;
-    }
-    #camel-narrator {
-      width: 7rem;
-    }
+  #user_inp {
+    width: 400px;
   }
+}
 
-  @media screen and (max-width: 500px) {
-    #narrator {
-      width: 24rem;
-      height: 10rem;
-      font-size: 0.8rem;
-    }
-    #adventure {
-      font-size: 1.05rem;
-      text-align: center;
-    }
-    #user_inp {
-      width: 300px;
-    }
-    #camel-narrator {
-      width: 6rem;
-    }
+@media screen and (max-width: 600px) {
+  #narrator {
+    width: 28rem;
+    height: 10rem;
+    font-size: 1rem;
   }
+  #adventure {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  #user_inp {
+    width: 350px;
+  }
+}
 
-  @media screen and (max-width: 400px) {
-    #narrator {
-      width: 20rem;
-      height: 8rem;
-      font-size: 0.7rem;
-    }
-    #adventure {
-      font-size: 0.9rem;
-      text-align: center;
-    }
-    #user_inp {
-      width: 250px;
-    }
-    #camel-narrator {
-      width: 5rem;
-    }
+@media screen and (max-width: 500px) {
+  #narrator {
+    width: 24rem;
+    height: 10rem;
+    font-size: 0.8rem;
+  }
+  #adventure {
+    font-size: 1.05rem;
+    text-align: center;
+  }
+  #user_inp {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #narrator {
+    width: 20rem;
+    height: 8rem;
+    font-size: 0.7rem;
+  }
+  #adventure {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  #user_inp {
+    width: 250px;
   }
 }
