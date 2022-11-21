@@ -30,7 +30,7 @@ textInput.addEventListener("input", startStory);
 function loadScene1() {
   storyTeller.innerHTML =
     "There's only sand as far as your eyes can see.. <br> <br> 1. look for water <br> or <br> 2. look for civilization";
-  document.body.style.backgroundImage = "url('./imgs/desert2.JPG')";
+  document.body.style.backgroundImage = "url('./imgs/desert2.jpg')";
   heading.innerText =
     "As you investigate the desert you get an uneasy feeling as you do not know how you got here 😕..";
   document.body.style.transition = "all 1000ms ease 180ms";
@@ -40,7 +40,7 @@ function loadScene1() {
 function loadScene2() {
   storyTeller.innerHTML =
     "As you get closer you realize it's just a mirage. <br> As you continue to walk you think you spot a camel. <br> <br> 1. look for civilization <br> or <br> 2. approach the camel";
-  document.body.style.backgroundImage = "url('./imgs/oasis.JPG')";
+  document.body.style.backgroundImage = "url('./imgs/oasis.jpg')";
   heading.innerText = "Is that an oasis?? 🏝️";
   document.body.style.transition = "all 1000ms ease 180ms";
   textInput.value = "";
@@ -49,7 +49,7 @@ function loadScene2() {
 function loadScene3() {
   storyTeller.innerHTML =
     "The camel refuses to interact with you.. <br> <br> 1. hop on it anyway <br> or <br> 2. set up a camp and rest <br> or <br> 3. look for civilization ";
-  document.body.style.backgroundImage = "url('./imgs/camel.JPG')";
+  document.body.style.backgroundImage = "url('./imgs/camel.jpg')";
   heading.innerText = "The camel pays no interest to you 🐪..";
   document.body.style.transition = "all 1000ms ease 180ms";
   textInput.value = "";
@@ -58,7 +58,7 @@ function loadScene3() {
 function loadScene4() {
   storyTeller.innerHTML =
     "The camel runs away as you try to hop on, <br> fortunately the sand cushioned the fall. <br> <br> 1. set up a camp and rest <br> or <br> 2. look for civilization ";
-  document.body.style.backgroundImage = "url('./imgs/camel2.JPG')";
+  document.body.style.backgroundImage = "url('./imgs/camel2.jpg')";
   heading.innerText = "The camel avoids you 🐪..";
   document.body.style.transition = "all 1000ms ease 180ms";
   textInput.value = "";
@@ -67,7 +67,7 @@ function loadScene4() {
 function loadScene5() {
   storyTeller.innerHTML =
     "You regret going to this place <br> as you hear some strange noises.. <br> <br> 1. investigate the noises <br> or <br> 2. look for water";
-  document.body.style.backgroundImage = "url('./imgs/ghost-town.JPG')";
+  document.body.style.backgroundImage = "url('./imgs/ghost-town.jpg')";
   heading.innerText =
     "You found some abandoned houses, this looks like a ghost town 🏚️..";
   document.body.style.transition = "all 1000ms ease 180ms";
@@ -77,7 +77,7 @@ function loadScene5() {
 function loadScene6() {
   storyTeller.innerHTML =
     "The house is empty, but you get a feeling you <br> are being watched.. <br> <br> 1. leave the ghost town <br> or <br> 2. stay and face your fears ";
-  document.body.style.backgroundImage = "url('./imgs/ghost-town2.JPG')";
+  document.body.style.backgroundImage = "url('./imgs/ghost-town2.jpg')";
   heading.innerText = "This house really gives you the creeps 😱..";
   document.body.style.transition = "all 1000ms ease 180ms";
   textInput.value = "";
@@ -86,7 +86,7 @@ function loadScene6() {
 function loadScene7() {
   storyTeller.innerHTML =
     "You completely freeze and your heartbeats increases <br> until you wake up and realize it was a nightmare. <br> <br> Type start game to start over <br> <br> Thanks for playing! ";
-  document.body.style.backgroundImage = "url('./imgs/ghostlike-creature.JPG')";
+  document.body.style.backgroundImage = "url('./imgs/ghostlike-creature.jpg')";
   heading.innerText = "A ghostlike creature appears and approaches you 👻..";
   document.body.style.transition = "all 1000ms ease 180ms";
   textInput.value = "";
@@ -95,7 +95,7 @@ function loadScene7() {
 function loadScene8() {
   storyTeller.innerHTML =
     "You breathe a sigh of relief.. <br> <br> 1. set up a camp and rest <br> or <br> 2. look for civilization <br> or <br> 3. look for water";
-  document.body.style.backgroundImage = "url('./imgs/desert2.JPG')";
+  document.body.style.backgroundImage = "url('./imgs/desert2.jpg')";
   heading.innerText = "You safely got out of that creepy ghost town 😌..";
   document.body.style.transition = "all 1000ms ease 180ms";
   textInput.value = "";
@@ -104,7 +104,7 @@ function loadScene8() {
 function loadScene9() {
   storyTeller.innerHTML =
     "You're about to fall asleep as something approaches <br> your tent. You wake up and realize it was all a nightmare. <br> <br> Type start game to start over <br> <br> Thanks for playing! ";
-  document.body.style.backgroundImage = "url('./imgs/camp.JPG')";
+  document.body.style.backgroundImage = "url('./imgs/camp.jpg')";
   heading.innerText = "You set up your tent and rests ⛺..";
   document.body.style.transition = "all 1000ms ease 180ms";
   textInput.value = "";
@@ -123,7 +123,7 @@ function startStory() {
     window.setTimeout(function () {
       storyTeller.innerHTML =
         "You are in the desert... <br> <br>  1. look around <br> or <br> 2. look for water";
-      document.body.style.backgroundImage = "url('./imgs/desert1.JPG')";
+      document.body.style.backgroundImage = "url('./imgs/desert1.jpg')";
       heading.innerText = "For some reason you ended up here, how come? 😧";
     }, 3000);
   }
