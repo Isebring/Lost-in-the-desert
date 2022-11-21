@@ -42,7 +42,7 @@ body {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 70%;
+  bottom: 75%;
   font-style: italic;
   font-size: 2rem;
   text-shadow: 2px 3px 2px black;
@@ -75,7 +75,7 @@ body {
 }
 
 #camel-narrator {
-  width: 8rem;
+  width: 10rem;
 }
 
 /* MEDIA QUERIES */
