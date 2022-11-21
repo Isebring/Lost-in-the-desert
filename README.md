@@ -8,6 +8,10 @@
 
 There are different paths that the user can take. There are also two different ways to reach an ending. To restart the game when an ending is reached: simply type "start game".
 
+**Notes:**
+*For some reason the transition between the scenes and images does not work as intended when running on Mozilla Firefox.*
+*Runs as expected on Chrome and Edge.*
+
 **The images used in this story was found on:**
 [www.pixabay.com]
 and
