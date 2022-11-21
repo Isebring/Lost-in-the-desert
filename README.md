@@ -1,6 +1,6 @@
 # Lost in the desert 
 
-## In this assignment I have created an interactive story where the user suddenly ends up in a desert in the middle of nowhere. You as the user now set out to explore and find out what happened!
+### In this assignment I have created an interactive story where the user suddenly ends up in a desert in the middle of nowhere. You as the user now set out to explore and find out what happened!
 
 *The user starts the game by typing "start game" in the input field.* 
 
