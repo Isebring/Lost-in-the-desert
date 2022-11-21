@@ -5,7 +5,6 @@ document.title = "Lost in the desert";
  * @type {HTMLInputElement}
  *  */
 let textInput = document.getElementById("user_inp");
-// textInput.val;
 
 /**
  * Variable for getting a HTML div element, this div is used to contain the narrator text beneath the user input field
@@ -58,7 +57,7 @@ function loadScene3() {
 /** A function for loading the fourth scene in the story, used in the switch statement */
 function loadScene4() {
   storyTeller.innerHTML =
-    "The camel runs away as you try to hop on, <br> fortunately the sand cushioned the fall <br> <br> 1. set up a camp and rest <br> or <br> 2. look for civilization ";
+    "The camel runs away as you try to hop on, <br> fortunately the sand cushioned the fall. <br> <br> 1. set up a camp and rest <br> or <br> 2. look for civilization ";
   document.body.style.backgroundImage = "url('./imgs/camel2.JPG')";
   heading.innerText = "The camel avoids you 🐪..";
   document.body.style.transition = "all 1000ms ease 180ms";
@@ -86,7 +85,7 @@ function loadScene6() {
 /** A function for loading the seventh scene in the story, used in the switch statement */
 function loadScene7() {
   storyTeller.innerHTML =
-    "You completely freeze and your heartbeats increases <br> until you wake up and realize it was a nightmare <br> <br> Type start game to start over <br> <br> Thanks for playing! ";
+    "You completely freeze and your heartbeats increases <br> until you wake up and realize it was a nightmare. <br> <br> Type start game to start over <br> <br> Thanks for playing! ";
   document.body.style.backgroundImage = "url('./imgs/ghostlike-creature.JPG')";
   heading.innerText = "A ghostlike creature appears and approaches you 👻..";
   document.body.style.transition = "all 1000ms ease 180ms";
@@ -104,7 +103,7 @@ function loadScene8() {
 /** A function for loading the ninth scene in the story, used in the switch statement */
 function loadScene9() {
   storyTeller.innerHTML =
-    "You're about to fall asleep as something approaches <br> your tent. You wake up and realize it was all a nightmare <br> <br> Type start game to start over <br> <br> Thanks for playing! ";
+    "You're about to fall asleep as something approaches <br> your tent. You wake up and realize it was all a nightmare. <br> <br> Type start game to start over <br> <br> Thanks for playing! ";
   document.body.style.backgroundImage = "url('./imgs/camp.JPG')";
   heading.innerText = "You set up your tent and rests ⛺..";
   document.body.style.transition = "all 1000ms ease 180ms";
@@ -130,7 +129,8 @@ function startStory() {
   }
   storyScenes();
 }
-/** This function represents the different scenes in the story. 
+
+/** This function represents the different scenes in the story.
  * They are made with a conditional switch statement and load different scenes depending on the input the user types.
  */
 function storyScenes() {
@@ -163,37 +163,5 @@ function storyScenes() {
     case "set up a camp and rest":
       loadScene9();
       break;
-    default:
-    //  storyTeller.innerHTML = "You haven't started the game yet.";
-    // storyTeller.innerHTML = (`${inp}`);
   }
 }
-//   }
-
-/** Here follows the if, else if and else statements for different user inputs throughout the story */
-//  function storyScenes() {
-// let inp = textInput.value;
-// if (gameStarted) {
-//   if (inp === "look around") {
-//     loadScene1();
-//   } else if (inp === "look for water") {
-//     loadScene2();
-//   } else if (inp === "approach the camel") {
-//     loadScene3();
-//   } else if (inp === "hop on it anyway") {
-//     loadScene4();
-//   } else if (inp === "look for civilization") {
-//     loadScene5();
-//   } else if (inp === "investigate the noises") {
-//     loadScene6();
-//   } else if (inp === "stay and face your fears") {
-//     loadScene7();
-//   } else if (inp === "leave the ghost town") {
-//     loadScene8();
-//   } else if (inp === "set up a camp and rest") {
-//     loadScene9();
-//   }
-// } else {
-//   nar.innerHTML = "You haven't started the game yet.";
-// }
-// }
