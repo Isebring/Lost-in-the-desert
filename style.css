@@ -18,6 +18,7 @@ body {
   align-items: center;
   transition: all 1000ms ease 300ms;
 }
+
 /* The input field */
 #user_inp {
   width: 582px;
@@ -62,9 +63,19 @@ body {
   top: 60%;
   justify-content: center;
   align-items: center;
-  border-radius: 16px; 
+  border-radius: 16px;
   opacity: 0.9;
   font-size: 1.8rem;
+}
+
+#camel {
+  display: flex;
+  position: absolute;
+  bottom: 52%;
+}
+
+#camel-narrator {
+  width: 10rem;
 }
 
 /* MEDIA QUERIES */
@@ -72,6 +83,9 @@ body {
   #adventure {
     font-size: 1.5rem;
     text-align: center;
+  }
+  #camel-narrator {
+    width: 9rem;
   }
 
   @media screen and (max-width: 850px) {
@@ -86,6 +100,10 @@ body {
     }
     #user_inp {
       width: 400px;
+    }
+
+    #camel-narrator {
+      width: 8rem;
     }
   }
 
@@ -102,6 +120,9 @@ body {
     #user_inp {
       width: 350px;
     }
+    #camel-narrator {
+      width: 7rem;
+    }
   }
 
   @media screen and (max-width: 500px) {
@@ -117,6 +138,9 @@ body {
     #user_inp {
       width: 300px;
     }
+    #camel-narrator {
+      width: 6rem;
+    }
   }
 
   @media screen and (max-width: 400px) {
@@ -131,6 +155,9 @@ body {
     }
     #user_inp {
       width: 250px;
+    }
+    #camel-narrator {
+      width: 5rem;
     }
   }
 }
